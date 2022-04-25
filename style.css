@@ -15,7 +15,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Red Hat Display", sans-serif;
   background: var(--primary-pale) url("images/pattern-background-desktop.svg")
     repeat-x;
@@ -28,9 +28,9 @@ body {
   line-height: 1.7;
 }
 .container {
-  max-width: min-content;
+  max-width: 400px;
   width: 90%;
-  height: 80%;
+  max-height: 600px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -39,14 +39,14 @@ body {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
-  padding-bottom: 1.8rem;
+  padding-bottom: 1.5rem;
 }
 
 .container h2 {
   font-weight: 900;
   text-align: center;
-  font-size: 28px;
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .container > p {
