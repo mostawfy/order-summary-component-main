@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-pale: hsl(225, 100%, 94%);
+  --primary-bright: hsl(245, 75%, 52%);
+  --netural-pale: hsl(225, 100%, 98%);
+  --netural-des: hsl(224, 23%, 55%);
+  --netural-dark: hsl(223, 47%, 23%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: var(--primary-pale) url("images/pattern-background-desktop.svg")
+    repeat-x;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--netural-dark);
+  line-height: 1.7;
+}
+.container {
+  max-width: min-content;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 1.8rem;
+}
+
+.container h2 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 1.5rem;
+}
+
+.container > p {
+  text-align: center;
+  width: 70%;
+  color: var(--netural-des);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--netural-pale);
+  width: 80%;
+  border-radius: 15px;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+.plan-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.annual-plan {
+  padding: 1rem;
+}
+.annual-plan h4 {
+  font-weight: 900;
+}
+.annual-plan p {
+  color: var(--netural-des);
+}
+
+.plan a {
+  color: var(--primary-bright);
+  font-weight: 700;
+}
+.plan a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+button {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 12px;
+  padding: 0.9rem;
+  font-family: inherit;
+  font-weight: 700;
+}
+.proceed {
+  color: white;
+  background-color: var(--primary-bright);
+  box-shadow: 0px 10px 15px 3px var(--primary-pale);
+  margin: 0.5rem;
+}
+
+.proceed:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  background-color: transparent;
+  color: var(--netural-dark);
+  font-weight: 900;
+  opacity: 0.7;
+}
+.cancel:hover {
+  opacity: 1;
+}
